@@ -1,4 +1,5 @@
 export { default as Logo } from './Logo.svg';
+export {default as Logo2 } from './Logo2.svg';
 export {default as Star } from './Star1.svg'
 export {default as Like} from './like.svg'
 export {default as Arrow1} from './arrow1.svg'
@@ -12,3 +13,7 @@ export {default as Rayo} from './rayo.svg'
 export {default as EasyStart} from '../Img/EasyStart.png'
 export {default as EasyWork} from '../Img/EasyWork.svg'
 export { default as EasyWorkicon} from '../Icon/easywork.png'
+export {default as Location} from '../Icon/location.svg'
+export {default as Email} from '../Icon/email.svg'
+export {default as Qr } from '../Img/Qr.png'
+export {default as Poligin } from '../Img/Polygon.png'
