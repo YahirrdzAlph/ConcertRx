@@ -1,8 +1,10 @@
 export { default as Logo } from './Logo.svg';
 export {default as Logo2 } from './Logo2.svg';
+export {default as Menu} from './menu.svg';
 export {default as Star } from './Star1.svg'
 export {default as Like} from './like.svg'
 export {default as Arrow1} from './arrow1.svg'
+export {default as ArrowInv} from './Arroe1Inv.svg'
 export {default as Arrowmd} from './Arrowmd.svg'
 export {default as Arrowmd2} from './Arrowmd2.svg'
 export {default as Arrow2} from './Arrow2.svg'

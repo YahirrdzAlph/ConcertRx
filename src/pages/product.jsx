@@ -7,8 +7,7 @@ import {
   Like,
   Arrow1,
   Arrow2,
-  Arrowmd,
-  Arrowmd2,
+  ArrowInv,
   Arrow3,
   Rayo,
   EasyStart,
@@ -30,7 +29,7 @@ const product = () => {
               </p>
             </div>
             {/* texto */}
-            <div>
+            <div className="flex flex-col gap-2">
               <h1 className="text-4xl text-text font-bold md:text-5xl md:font-bold md:text-center lg:text-[64px]">
                 Powerful Patient{" "}
                 <span className="text-primary">Experience.</span>
@@ -43,7 +42,7 @@ const product = () => {
               </p>
             </div>
             {/* buttons */}
-            <div className="flex flex-col gap-4 md:flex-row md justify-center">
+            <div className="flex flex-col gap-4 md:flex-row md justify-center px-4">
               <button className="bg-primary text-white text-sm font-medium py-4 px-8 rounded-3xl">
                 <Link>Try ConcertRX now</Link>
               </button>
@@ -69,19 +68,38 @@ const product = () => {
           We made ConcertRx easy to use. Like, really easy.
         </p>
         <div className="flex flex-col w-full justify-center items-center">
-          <div className="md:px-[90px] lg:px-0">
-            <img src={EasyStart} alt="" />
+          <div className="md:px-[90px] lg:px-0 flex items-center">
+            <div className="hidden flex-col items-end justify-center lg:block h-[144px] w-[175px]">
+              <img src={Arrow1} alt="" />
+              <div className="flex flex-col items-center justify-center">
+                <h4>Smart Workflow</h4>
+                <p>
+                  Adding column of your choice makes it easier to manage the
+                  work.
+                </p>
+              </div>
+            </div>
+            <img src={EasyStart} alt="" className="md:w-[564px]" />
+            <div className="hidden flex-col items-end justify-center lg:block h-[144px] w-[175px]">
+              <img src={Arrow2} alt="" />
+              <div className="flex flex-col items-center justify-center">
+                <h4>Smart Workflow</h4>
+                <p>
+                  Adding column of your choice makes it easier to manage the
+                  work.
+                </p>
+              </div>
+            </div>
           </div>
           {/* flechas */}
-          <div className="flex flex-col gap-6 md:flex-row w-full justify-center md:justify-between">
+          <div className=" flex">
             <img
               src={Arrow1}
               alt=""
-              className="rotate-[-52deg] lg:block hidden"
+              className="rotate-[-52deg] md:block lg:hidden hidden w-[54px] h-[34px]"
             />
-            <img src={Arrowmd} alt="" className="hidden md:block lg:hidden" />
-            <div className="flex flex-row items-end gap-2 bg-slate-100">
-              <div className="flex flex-col">
+            <div className="flex flex-col gap-6 md:flex-row p-4 lg:justify-center  md:w-[564px] justify-center md:justify-between">
+              <div className="flex flex-col items-center gap-2 lg:hidden">
                 <h5 className="text-sm font-bold text-center">
                   Smart Workflow
                 </h5>
@@ -90,16 +108,17 @@ const product = () => {
                   work.
                 </p>
               </div>
-            </div>
-            <div className="flex flex-col items-center gap-2 bg-slate-100">
-              <img src="" alt="" />
-              <h5 className="text-sm font-bold text-center">Smart Workflow</h5>
-              <p className="font-normal text-sm text-para text-center">
-                Adding column of your choice makes it easier to manage the work.
-              </p>
-            </div>
-            <div className="flex flex-row-reverse items-end gap-2 bg-slate-100">
-              <div className="flex flex-col">
+              <div className="flex flex-col items-center gap-2 lg:hidden">
+                <h5 className="text-sm font-bold text-center">
+                  Smart Workflow
+                </h5>
+                <p className="font-normal text-sm text-para text-center">
+                  Adding column of your choice makes it easier to manage the
+                  work.
+                </p>
+              </div>
+              <div className="flex flex-col items-center gap-2 ">
+                <img src={Arrow3} alt="" className="hidden lg:block" />
                 <h5 className="text-sm font-bold text-center">
                   Smart Workflow
                 </h5>
@@ -110,11 +129,10 @@ const product = () => {
               </div>
             </div>
             <img
-              src={Arrowmd2}
+              src={ArrowInv}
               alt=""
-              className="hidden md:block lg:hidden sticky top-5"
+              className="hidden md:block lg:hidden sticky top-5 rotate-[52deg] w-[54px] h-[34px]"
             />
-            <img src={Arrow2} alt="" className="hidden lg:block" />
           </div>
         </div>
       </section>

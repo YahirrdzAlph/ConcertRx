@@ -4,89 +4,89 @@ import { Logo, Logo2, Location, Email } from "../assets/Icon";
 import { Qr, Poligin } from "../assets/Icon";
 const fotter = () => {
   return (
-    <footer className="text-center lg:text-left bg-gray-100 text-gray-600">
-      <div className="flex flex-col justify-center  md:p-[40px] lg:py-[64px] lg:px-[189px] bg-green-200">
+    <footer className="text-center lg:text-left text-gray-600">
+      <div className="flex flex-col justify-center py-[40px] md:p-[40px] lg:py-[64px] lg:px-[189px] bg-green-200">
         <div>
           <div className="flex justify-center">
             <img src={Logo} alt="" />
           </div>
           <div className="mx-6 py-10 text-center md:text-left">
             <div className="grid grid-cols-2  md:grid-cols-3  lg:grid-cols-5 gap-8">
-              <div className="flex flex-col gap-7 text-left">
+              <div className="flex flex-col gap-4 lg:gap-7 text-left">
                 <h6 className="uppercase font-extrabold flex  justify-start md:justify-start">
                   Product
                 </h6>
-                <div>
-                  <p className="mb-4">
+                <div className="flex flex-col gap-3">
+                  <p className="text-para text-sm  font-medium">
                     <a href="#!" className="text-gray-600">
                       Login
                     </a>
                   </p>
-                  <p className="mb-4">
+                  <p className="text-para text-sm font-medium">
                     <a href="#!" className="text-gray-600">
                       Pricing
                     </a>
                   </p>
-                  <p className="mb-4">
+                  <p className="text-para text-sm font-medium">
                     <a href="#!" className="text-gray-600">
                       --
                     </a>
                   </p>
-                  <p className="mb-4">
+                  <p className="text-para text-sm font-medium">
                     <a href="#!" className="text-gray-600">
                       ---
                     </a>
                   </p>
                 </div>
               </div>
-              <div className="flex flex-col gap-7 text-left">
+              <div className="flex flex-col gap-4 lg:gap-7 text-left">
                 <h6 className="uppercase font-extrabold flex justify-start md:justify-start">
                   Use Cases
                 </h6>
-                <div>
-                  <p className="mb-4">
+                <div className=" flex flex-col gap-3">
+                  <p className="text-para text-sm font-medium">
                     <a href="#!" className="text-gray-600">
                       Ozempic Waiting List
                     </a>
                   </p>
-                  <p className="mb-4">
+                  <p className="text-para text-[13px] font-medium">
                     <a href="#!" className="text-gray-600">
                       Compounding Workflows
                     </a>
                   </p>
-                  <p className="mb-4">
+                  <p className="text-para text-sm font-medium">
                     <a href="#!" className="text-gray-600">
                       Vaccination Journey
                     </a>
                   </p>
-                  <p>
+                  <p className="text-para text-sm font-medium">
                     <a href="#!" className="text-gray-600">
                       Special Orders
                     </a>
                   </p>
-                  <p>
+                  <p className="text-para text-sm font-mediums">
                     <a href="#!" className="text-gray-600">
                       Drug Journeys
                     </a>
                   </p>
                 </div>
               </div>
-              <div className="flex flex-col gap-7 text-left">
+              <div className="flex flex-col gap-4 lg:gap-7 text-left">
                 <h6 className="uppercase font-extrabold flex justify-start md:justify-start">
                   Useful links
                 </h6>
-                <div>
-                  <p className="mb-4">
+                <div className="flex flex-col gap-3">
+                  <p className="text-para text-sm font-medium">
                     <a href="#!" className="text-gray-600">
                       Pricing
                     </a>
                   </p>
-                  <p className="mb-4">
+                  <p className="text-para text-sm font">
                     <a href="#!" className="text-gray-600">
                       Settings
                     </a>
                   </p>
-                  <p className="mb-4">
+                  <p className="text-para text-sm font">
                     <a href="#!" className="text-gray-600">
                       Orders
                     </a>
@@ -98,20 +98,24 @@ const fotter = () => {
                   </p>
                 </div>
               </div>
-              <div className="flex flex-col gap-7 text-left">
+              <div className="flex flex-col gap-4 lg:gap-7 text-left">
                 <h6 className="uppercase font-extrabold flex justify-start md:justify-start">
                   Contact
                 </h6>
-                <div>
-                  <p className="flex items-center justify-start mb-4">
-                    Australia: 0482 097 007
+                <div className="flex flex-col gap-3">
+                  <p className="font-medium text-sm text-para">
+                    <span className="text-text font-semibold">Australia:</span>{" "}
+                    0482 097 007
                   </p>
-                  <p className="flex items-center justify-start mb-4">
-                    United Kingdom: 07700 174007
+                  <p className="font-medium text-sm text-para">
+                    <span className="text-text font-semibold">
+                      United Kingdom:
+                    </span>{" "}
+                    07700 174007
                   </p>
                 </div>
               </div>
-              <div className="flex flex-col  gap-7 text-left">
+              <div className="flex flex-col  gap-4 lg:gap-7 text-left">
                 <h6 className="uppercase font-extrabold flex justify-start md:justify-start">
                   Contact
                 </h6>
@@ -145,13 +149,13 @@ const fotter = () => {
           </div>
         </div>
       </div>
-      <div className="text-center p-4 flex flex-col bg-gray-200 items-center justify-center gap-9">
-        <div className="flex flex-col md:flex-row justify-center items-start gap-4 md:w-[648px] lg:w-[1062px]">
-          <div className="bg-blue-50 flex flex-col items-start gap-4 w-full">
+      <div className="text-center p-4 flex flex-col mb-16 md:mb-8 lg:mb-20 items-center justify-center gap-9">
+        <div className="flex flex-col md:flex-row justify-center items-center md:items-start lg:items-start gap-4 md:w-[648px] lg:w-[1000px]">
+          <div className=" flex flex-col items-start gap-4 w-full">
             <h3 className="text-[28px] leading-9 text-text font-bold lg:w-[650px] lg:text-[40px]">
               Want to receive product updates?{" "}
             </h3>
-            <h5 className="text-xs text-start text-para md:w-[371px] md:h-[72px] lg:text-lg lg:w-[417px] lg:leading-7">
+            <h5 className="text-xs text-start text-para md:w-[371px] md:h-[72px] lg:text-lg lg:w-[380px] lg:leading-7">
               To opt-in to our text message update service.Text YES to +61482
               097 007 OR Scan the QR code. You can send STOP to unsubscribe
               anytime.{" "}
@@ -167,7 +171,7 @@ const fotter = () => {
             </div>
           </div>
         </div>
-        <p className="text-[14px] text-para text-center lg:w-[1062px]">
+        <p className="text-[14px] text-para text-center lg:w-[1000px]">
           Copyright © 2022 GigaRx Capital Pty Ltd and/or its subsidiaries or
           affiliates. All Rights Reserved. ConcertRx, ScriptCards, ShrinkMan,
           StoreOps and certain product names used herein are trademarks or
