@@ -2,7 +2,7 @@ import React from "react"
 import { Slider1, Slider2 } from "../../assets/Icon"
 const slider = () => {
     return (
-        <div className="flex flex-col items-center lg:py-[80px] lg:px-[40px] gap-7">
+        <div className="flex flex-col items-center lg:py-[80px] lg:px-[40px] gap-7 bg-[#FAFAFA] w-full">
             <h3 className="font-normal text-base leading-6 text-para lg:leading-7 w-[320px] p-2 md:w-[616px]">
                 “Their system for getting rapid antigen tests was easy to
                 register and for pickng was hassle free. I appriciate that they
