@@ -223,7 +223,7 @@ const product = () => {
                             className="md:w-[360px] md:h-[204px] lg:w-[673px] lg:h-[381px] md:absolute lg:top-[122px] lg:left-1 sm:top-32 sm:left-48"
                         />
                     </div>
-                </div> 
+                </div>
             </section>
             {/* Patient Jorney */}
             <section className="w-full lg:h-[628px] lg:mb-[96px] mx-auto px-4 md:px-6 lg:px-28">
@@ -243,7 +243,7 @@ const product = () => {
                                 </p>
                             </div>
                             <article className="flex flex-col gap-4 items-center lg:items-start">
-                                <h1 className="text-text text-3xl leading-[58px] tracking-tighter text-center font-bold tracking-tights md:text-2xl lg:w-[306px] lg:text-[47px] lg:leading-[58px] lg:tracking-tighter lg:text-start">
+                                <h1 className="text-text text-3xl leading-[58px] tracking-tighter text-center font-bold tracking-tights md:text-2xl lg:w-[306px] lg:text-[41px] lg:leading-[58px] lg:tracking-tighter lg:text-start">
                                     {" "}
                                     Patient’s Journey Management
                                 </h1>
@@ -355,4 +355,3 @@ const product = () => {
 }
 
 export default product
- 
