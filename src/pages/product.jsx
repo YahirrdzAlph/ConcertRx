@@ -21,7 +21,7 @@ const product = () => {
         <div className="w-full h-full">
             <NavBar />
             {/* Header of the page */}
-            <section className="w-full h-[400px] md:h-[492px] lg:h-[640px] mb-[48px] flex items-center justify-center">
+            <section className="w-full h-[400px] bg-bgPrint md:h-[492px] lg:h-[640px] mb-[48px] flex items-center justify-center">
                 <div className=" md:w-[516px] md:h-[308px] lg:w-[624px] lg:h-[408px] gap-[32px] flex flex-col">
                     <div className="flex flex-col gap-6 items-center">
                         <div className="flex items-center justify-center gap-[15px] leading-5">
@@ -223,7 +223,7 @@ const product = () => {
                             className="md:w-[360px] md:h-[204px] lg:w-[673px] lg:h-[381px] md:absolute lg:top-[122px] lg:left-1 sm:top-32 sm:left-48"
                         />
                     </div>
-                </div>
+                </div> 
             </section>
             {/* Patient Jorney */}
             <section className="w-full lg:h-[628px] lg:mb-[96px] mx-auto px-4 md:px-6 lg:px-28">
@@ -310,14 +310,14 @@ const product = () => {
             </section>
             {/* sliders */}
             <section className="flex flex-col items-center gap-11">
-                <div className="flex flex-col items-center gap-2">
+                <div className="flex flex-col items-center gap-[18px]">
                     <div className="flex flex-row">
                         <img src={Star} alt="" />
                         <p className="text-sm font-medium tracking-tight leading-5">
                             Trusted by over 1,000 customers
                         </p>
                     </div>
-                    <h2 className="font-bold text-[28px] lg:text-5xl text-center tracking-tighter">
+                    <h2 className="font-bold text-[28px] lg:text-5xl text-center tracking-[-0.15rem]">
                         {" "}
                         But don't take it from us…
                     </h2>
@@ -355,34 +355,4 @@ const product = () => {
 }
 
 export default product
-
-{
-    /* <div className="flex flex-col gap-5">
-<div className="flex items-center justify-center gap-2 ">
-  <img src={Star} alt="" className="h-4 w-4" />
-  <p className="text-para text-xs ">
-    Trusted by over 1,000 customers
-  </p>
-</div>
-<h1 className="text-text font-bold text-4xl lg:text-6xl">
-  Powerful Patien <br />
-  <span className="text-primary">Experience.</span>
-</h1>
-<p className="text-para lg:text-lg font-normal text-base text-center">
-  ConcertRx modernizes how pharmacies manage workflow, medication
-  waiting lists, and patient journeys by efficiently triggering SMS
-  notifications by dragging a card on a visual interface or
-  autonomously based on rules.
-</p>
-</div> */
-}
-
-// <div className="bg-gray-200 h-full flex flex-col items-center justify-center">
-// {/* titulo */}
-// <div className="w-[405px]">
-// </div>
-// </div>
-// {/* part12 */}
-// <div className="bg-green-100 relative ">
-// <img src={EasyWork} alt="" />
-// </div>
+ 

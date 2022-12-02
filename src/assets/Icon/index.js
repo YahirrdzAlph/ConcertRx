@@ -18,6 +18,10 @@ export { default as EasyWorkicon } from "../Icon/easywork.png"
 export { default as Location } from "../Icon/location.svg"
 export { default as Email } from "../Icon/email.svg"
 export { default as Qr } from "../Img/Qr.png"
+export {default as Qricon} from '../Img/Qr.svg'
 export { default as Poligin } from "../Img/Polygon.png"
 export {default as ManageIcon} from '../Icon/Manage.svg'
 export {default as MsgIcon} from '../Icon/msg.svg'
+export {default as Listicon } from '../Icon/ListIcon.svg'
+export {default as minus} from '../Icon/minus.svg'
+export {default as plus} from '../Icon/plus.svg'
