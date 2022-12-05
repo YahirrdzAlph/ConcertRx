@@ -6,7 +6,7 @@ import bg from "../assets/Img/bg.png"
 const fotter = () => {
     return (
         <footer className="text-center lg:text-left text-gray-600">
-            <div className="flex flex-col justify-center py-[40px] md:p-[40px] lg:py-[60px] lg:px-[165px] lg:h-[642px]">
+            <div className="flex flex-col justify-center py-[40px] md:p-[40px] lg:py-[60px] lg:px-[165px] lg:h-[642px] bg-green-100">
                 <div className="w-full h-full gap-16 flex flex-col">
                     <div className="flex justify-center">
                         <img
@@ -16,9 +16,9 @@ const fotter = () => {
                         />
                     </div>
                     <div className="mx-6 text-center md:text-left">
-                        <div className="grid grid-cols-2  md:grid-cols-3  lg:grid-cols-5 gap-8">
+                        <div className="grid grid-cols-2  md:grid-cols-3  lg:grid-cols-footer gap-8">
                             <div className="flex flex-col gap-4 lg:gap-7 text-left">
-                                <h6 className="uppercase font-extrabold flex  justify-start md:justify-start">
+                                <h6 className="text-[20xp]font-extrabold flex  justify-start md:justify-start">
                                     Product
                                 </h6>
                                 <div className="flex flex-col gap-3">
@@ -45,7 +45,7 @@ const fotter = () => {
                                 </div>
                             </div>
                             <div className="flex flex-col gap-4 lg:gap-7 text-left">
-                                <h6 className="uppercase font-extrabold flex justify-start md:justify-start">
+                                <h6 className=" text-[20xp] font-extrabold flex justify-start md:justify-start">
                                     Use Cases
                                 </h6>
                                 <div className=" flex flex-col gap-3">
@@ -77,38 +77,33 @@ const fotter = () => {
                                 </div>
                             </div>
                             <div className="flex flex-col gap-4 lg:gap-7 text-left">
-                                <h6 className="uppercase font-extrabold flex justify-start md:justify-start">
-                                    Useful links
+                                <h6 className="text-[20xp] font-extrabold flex justify-start md:justify-start">
+                                    Company
                                 </h6>
                                 <div className="flex flex-col gap-3">
                                     <p className="text-para text-sm font-medium">
-                                        <a href="#!" className="text-gray-600">
-                                            Pricing
-                                        </a>
-                                    </p>
-                                    <p className="text-para text-sm font">
-                                        <a href="#!" className="text-gray-600">
-                                            Settings
-                                        </a>
-                                    </p>
-                                    <p className="text-para text-sm font">
-                                        <a href="#!" className="text-gray-600">
-                                            Orders
-                                        </a>
-                                    </p>
-                                    <p>
-                                        <a
-                                            href="#!flex flex-col gap-7"
+                                        <Link
+                                            to={"/about"}
                                             className="text-gray-600"
                                         >
-                                            Help
+                                            About Us
+                                        </Link>
+                                    </p>
+                                    <p className="text-para text-sm font">
+                                        <a href="#!" className="text-gray-600">
+                                            Carrers
+                                        </a>
+                                    </p>
+                                    <p className="text-para text-sm font">
+                                        <a href="#!" className="text-gray-600">
+                                            FAQs
                                         </a>
                                     </p>
                                 </div>
                             </div>
                             <div className="flex flex-col gap-4 lg:gap-7 text-left">
-                                <h6 className="uppercase font-extrabold flex justify-start md:justify-start">
-                                    Contact
+                                <h6 className="text-[20xp] font-extrabold flex justify-start md:justify-start">
+                                    Support
                                 </h6>
                                 <div className="flex flex-col gap-3">
                                     <p className="font-medium text-sm text-para">
@@ -125,9 +120,9 @@ const fotter = () => {
                                     </p>
                                 </div>
                             </div>
-                            <div className="flex flex-col  gap-4 lg:gap-7 text-left">
-                                <h6 className="uppercase font-extrabold flex justify-start md:justify-start">
-                                    Contact
+                            <div className="flex flex-col  gap-2 lg:gap-7 text-left">
+                                <h6 className=" font-extrabold flex justify-start md:justify-start">
+                                    Contact us
                                 </h6>
                                 <div className="flex items-center gap-2">
                                     <img src={Location} alt="" />
@@ -136,12 +131,8 @@ const fotter = () => {
                                         2000
                                     </p>
                                 </div>
-                                <div className="flex items-center justify-center gap-2">
-                                    <img
-                                        src={Email}
-                                        alt=""
-                                        className="w-6 h-6"
-                                    />
+                                <div className="flex items-center gap-2">
+                                    <img src={Email} alt="" />
                                     <p className="flex font-medium text-sm leading-5 text-zinc-700 underline">
                                         finance@gigarx.capital
                                     </p>
@@ -152,11 +143,25 @@ const fotter = () => {
                 </div>
                 <div className="flex flex-col items-center gap-8">
                     <div className="flex flex-col md:flex-row items-center gap-5">
-                        <p>Privacy Policy</p>
-                        <p>Terms and Conditions</p>
-                        <p>EULA</p>
-                        <p>Security</p>
-                        <p>Site Map</p>
+                        <Link to={"/policy"}>
+                            <p>Privacy Policy</p>
+                        </Link>
+                        <p>|</p>
+                        <Link to={"/terms"}>
+                            <p>Terms and Conditions</p>
+                        </Link>
+                        <p>|</p>
+                        <Link to={"/end-user"}>
+                            <p>EULA</p>
+                        </Link>
+                        <p>|</p>
+                        <Link to={"/security"}>
+                            <p>Security</p>
+                        </Link>
+                        <p>|</p>
+                        <Link>
+                            <p>Site Map</p>
+                        </Link>
                     </div>
                     <div className="flex flex-col items-center justify-center">
                         <p>Powered by</p>
@@ -181,7 +186,7 @@ const fotter = () => {
                         <div className="w-full flex flex-col justify-center items-center">
                             <img src={Poligin} alt="" className="w-6 h-6" />
                             <div className="flex justify-center items-center py-2 w-full px2.5 bg-text rounded-b-xl">
-                                <p className="uppercase text-white">Scan me</p>
+                                <p className=" text-white">Scan me</p>
                             </div>
                         </div>
                     </div>

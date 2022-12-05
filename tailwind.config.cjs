@@ -5,9 +5,17 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    screens: {
+      'md': '744px',
+      'lg': '1024px',
+    },
     extend: {
       backgroundImage: {
         'bg': "url('/src/assets/Img/bg.png')",
+      },
+      gridTemplateColumns: {
+        // Complex site-specific column configuration
+        'footer': '145px 214px 145px 214px 214px',
       },
       colors: {
         text: "#27272A",

@@ -21,9 +21,9 @@ const product = () => {
         <div className="w-full h-full">
             <NavBar />
             {/* Header of the page */}
-            <section className="w-full h-[400px] bg-bgPrint md:h-[492px] lg:h-[640px] mb-[48px] flex items-center justify-center">
+            <section className="w-full h-[400px] bg-bgPrint md:h-[492px] lg:h-[640px] mb-[48px] flex md:mt-[52px] lg:mt-0 lg:items-center justify-center">
                 <div className=" md:w-[516px] md:h-[308px] lg:w-[624px] lg:h-[408px] gap-[32px] flex flex-col">
-                    <div className="flex flex-col gap-6 items-center">
+                    <div className="flex flex-col md:gap-[17.5px] lg:gap-6 items-center">
                         <div className="flex items-center justify-center gap-[15px] leading-5">
                             <img src={Star} alt="" />
                             <p className="text-xs font-medium text-para md:text-sm">
@@ -31,15 +31,15 @@ const product = () => {
                             </p>
                         </div>
                         {/* texto */}
-                        <div className="flex flex-col gap-5 justify-center">
-                            <h1 className="text-4xl text-text font-bold md:text-5xl md:font-bold md:text-center lg:text-[64px] leading-10">
+                        <div className="flex flex-col  md:gap-[23xpx] lg:gap-[16px] justify-center">
+                            <h1 className="text-4xl text-text font-bold md:text-[44px] md:tracking-[0.05rem] md:font-bold md:text-center md:leading-[48px] lg:text-[64px] lg:leading-[70px]">
                                 Powerful Patient
                                 <br />
                                 <span className="text-primary">
                                     Experience.
                                 </span>
                             </h1>
-                            <p className="text-base font-normal w-[580.04px] text-para md:text-base lg:text-lg leading-6 lg:leading-7 tracking-tighter">
+                            <p className="text-base font-normal lg:w-[580.04px] text-para md:text-base lg:text-lg leading-6 lg:leading-[27px] lg:tracking-tighter md:leading-[24px] md:tracking-[-0.01rem] md:text-center md:w-[516px]">
                                 ConcertRx modernizes how pharmacies manage
                                 workflow, medication waiting lists and patient
                                 journeys by efficiently triggering SMS
@@ -49,20 +49,20 @@ const product = () => {
                         </div>
                     </div>
                     {/* buttons */}
-                    <div className="flex flex-col gap-2 md:flex-row md justify-center px-6">
-                        <button className="bg-primary flex items-center w-[144px] text-white text-base font-medium px-[32px] py-[16px] lg:w-[208px] lg:h-[48px] rounded-3xl">
+                    <div className="flex flex-col gap-2 md:flex-row justify-center px-6">
+                        <button className="bg-primary flex items-center w-[144px] text-white text-base font-medium px-[32px] py-[16px] lg:w-[208px] lg:h-[48px] md:w-[208px] md:h-[44px] md:py-[14px] rounded-3xl">
                             <Link>Try ConcertRX now</Link>
                         </button>
-                        <button className="bg-transparent flex items-center justify-center w-[94px] text-primary text-base font-medium px-[32px] py-[16px] lg:w-[158px] lg:h-[48px] rounded-3xl  border-solid border-primary border">
+                        <button className="bg-transparent flex items-center justify-center w-[94px] text-primary text-base font-medium px-[32px] py-[16px] lg:w-[158px] lg:h-[48px] md:w-[158px] md:h-[44px] md:py-[14px] rounded-3xl  border-solid border-primary border">
                             <Link className="capitalize">View Pricing</Link>
                         </button>
                     </div>
                 </div>
             </section>
             {/* content of the page */}
-            <section className="w-full lg:h-[848px] lg:mb-[96px]">
+            <section className="w-full bg-red-50 md:h-[613px] lg:h-[848px] md:mb-[64px] lg:mb-[96px]">
                 <div className="w-full h-full items-center gap-[40px] flex flex-col mx-auto mb-[48px]">
-                    <div className="flex flex-col items-center gap-5">
+                    <div className="flex flex-col items-center gap-5 ">
                         <div className="flex gap-2">
                             <img src={Like} alt="" />
                             <p className="capitalize text-xs text-text md:text-sm lg:text-sm font-medium leading-5">
@@ -80,8 +80,8 @@ const product = () => {
                             </p>
                         </div>
                     </div>
-                    <div className="flex flex-col w-full justify-center items-center">
-                        <div className="md:px-[90px] lg:px-0 flex items-center">
+                    <div className="flex flex-col w-full justify-center items-center gap-5">
+                        <div className="md:px-[90px] lg:px-0 flex items-center gap-5">
                             <div className="hidden flex-col items-center justify-center lg:block h-[145px] w-[175px]">
                                 <div className="flex items-end justify-end ">
                                     <img
@@ -103,7 +103,7 @@ const product = () => {
                             <img
                                 src={EasyStart}
                                 alt=""
-                                className="md:w-[564px] lg:w-[890px] lg:h-[520px]"
+                                className="md:w-[564px] lg:w-[842px] lg:h-[475px]"
                             />
                             <div className="hidden flex-col items-center justify-center lg:block h-[145px] w-[175px]">
                                 <div className="flex flex-col gap-4">
@@ -124,21 +124,23 @@ const product = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="hidden flex-col items-center justify-center lg:block h-[145px] w-[175px]">
+                        <div className="hidden lg:block lg:gap-[32px] items-center justify-center w-[199px]">
                             <div className="flex justify-center">
                                 <img
                                     src={Arrow3}
                                     alt=""
-                                    className="w-[95px] h-[75px]"
+                                    className="w-[95px] h-[95px]"
                                 />
                             </div>
-                            <h5 className="text-sm font-bold text-center">
-                                Smart patient journeys
-                            </h5>
-                            <p className="font-normal text-sm text-para text-center lg:w-[199px]">
-                                Walk-in patients get notified by receiving text
-                                messages on each and every step.
-                            </p>
+                            <div className="flex flex-col gap-1">
+                                <h5 className="text-sm font-bold text-center w-full">
+                                    Smart patient journeys
+                                </h5>
+                                <p className="font-normal text-sm text-para text-center lg:w-[199px]">
+                                    Walk-in patients get notified by receiving
+                                    text messages on each and every step.
+                                </p>
+                            </div>
                         </div>
                         {/* flechas */}
                         <div className=" flex lg:hidden">

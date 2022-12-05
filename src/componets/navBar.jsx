@@ -1,4 +1,5 @@
 import React from "react"
+import { Join } from "../pages"
 import { Link } from "react-router-dom"
 import { Logo, Menu } from "../assets/Icon"
 
@@ -27,7 +28,7 @@ const navBar = () => {
                         <Link className="text-[16px] font-medium text-primary">
                             Login
                         </Link>
-                        <Link>
+                        <Link to={"/join"}>
                             <button className="flex justify-center items-center px-[24px] py-[14px] bg-primary rounded-3xl text-white w-[134px] h-[44px]">
                                 Get Started
                             </button>
