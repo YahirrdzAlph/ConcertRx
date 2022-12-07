@@ -21,7 +21,7 @@ const product = () => {
         <div className="w-full h-full">
             <NavBar />
             {/* Header of the page */}
-            <section className="w-full h-[400px] bg-bgPrint md:h-[492px] lg:h-[640px] mb-[48px] flex md:mt-[52px] lg:mt-0 lg:items-center justify-center">
+            <section className="w-full h-[400px] bg-bgPrint md:h-[492px] lg:h-[640px] mb-[48px] flex md:pt-[52px] lg:pt-0 lg:items-center justify-center">
                 <div className=" md:w-[516px] md:h-[308px] lg:w-[624px] lg:h-[408px] gap-[32px] flex flex-col">
                     <div className="flex flex-col md:gap-[17.5px] lg:gap-6 items-center">
                         <div className="flex items-center justify-center gap-[15px] leading-5">
@@ -60,9 +60,9 @@ const product = () => {
                 </div>
             </section>
             {/* content of the page */}
-            <section className="w-full bg-red-50 md:h-[613px] lg:h-[848px] md:mb-[64px] lg:mb-[96px]">
+            <section className="w-full md:h-[613px] lg:h-[848px] md:mb-[64px] lg:mb-[96px]">
                 <div className="w-full h-full items-center gap-[40px] flex flex-col mx-auto mb-[48px]">
-                    <div className="flex flex-col items-center gap-5 ">
+                    <div className="flex flex-col items-center md:gap-[13px] lg:gap-5">
                         <div className="flex gap-2">
                             <img src={Like} alt="" />
                             <p className="capitalize text-xs text-text md:text-sm lg:text-sm font-medium leading-5">
@@ -70,11 +70,11 @@ const product = () => {
                             </p>
                         </div>
                         {/* titulos */}
-                        <div className="flex flex-col items-center justify-center gap-[18px]">
-                            <h3 className=" text-3xl leading-[62px] tracking-tighter md:text-3xl  lg:text-5xl font-bold text-text text-center">
+                        <div className="flex flex-col items-center justify-center md:gap-[19px] lg:gap-[18px]">
+                            <h3 className=" text-3xl leading-[62px] tracking-tighter md:text-[30px] md:leading-[30px] md:tracking-[0.05rem]  lg:text-5xl font-bold text-text text-center">
                                 Easy to get started
                             </h3>
-                            <p className="text-para text-[18px] lg:text-lg  text-center font-normal leading-[27px] tracking-tight">
+                            <p className="text-para text-[18px] lg:text-lg  text-center font-normal md:text-[16px] md:leading-4 lg:leading-[27px] lg:tracking-tight">
                                 We made ConcertRx easy to use. Like, really
                                 easy.
                             </p>
@@ -103,7 +103,7 @@ const product = () => {
                             <img
                                 src={EasyStart}
                                 alt=""
-                                className="md:w-[564px] lg:w-[842px] lg:h-[475px]"
+                                className="md:w-[564px] md:h-[315px] lg:w-[842px] lg:h-[475px]"
                             />
                             <div className="hidden flex-col items-center justify-center lg:block h-[145px] w-[175px]">
                                 <div className="flex flex-col gap-4">
@@ -188,12 +188,12 @@ const product = () => {
                 </div>
             </section>
             {/* easy Section */}
-            <section className="w-full lg:h-[628px] lg:mb-[96px] mx-auto px-4 md:px-6 lg:px-28">
+            <section className="w-full lg:h-[628px] md:mb-[56px] lg:mb-[96px] mx-auto px-4 md:px-6 lg:px-28">
                 <div className="flex md:h-[380px] lg:h-[627px] gap-3 flex-col md:flex-row-reverse md:relative ">
                     <div className="w-full lg:h-full flex justify-center items-center bg-zinc-50 rounded-lg   ">
                         {/* tituto */}
-                        <div className="flex flex-col lg:w-[405px] lg:h-[236px] items-center md:items-start gap-2.5">
-                            <div className="bg-red-50 flex gap-2 justify-center items-center">
+                        <div className="flex flex-col lg:w-[405px] lg:h-[236px] md:w-[288px] md:h-[202px] md:pl-[45px] lg:p-0 lg:items-center md:items-start md:gap-[10px] lg:gap-2.5">
+                            <div className="flex gap-2 justify-center items-center">
                                 <img
                                     src={EasyWorkicon}
                                     alt="Easy Work"
@@ -204,12 +204,12 @@ const product = () => {
                                     Easy Work
                                 </p>
                             </div>
-                            <article className="flex flex-col gap-4 items-center lg:items-start">
-                                <h1 className="text-text text-3xl leading-[58px] tracking-tighter text-center font-bold tracking-tights md:text-2xl lg:w-[306px] lg:text-[47px] lg:leading-[58px] lg:tracking-tighter lg:text-start">
+                            <article className="flex flex-col gap-4 items-center md:items-start lg:items-start">
+                                <h1 className="text-text text-3xl leading-[58px] md:text-start md:font-bold md:tracking-[-0.04rem] md:leading-[29px] text-center font-bold tracking-tights md:text-2xl lg:w-[306px] lg:text-[47px] lg:leading-[58px] lg:tracking-tighter lg:text-start">
                                     {" "}
                                     Easy Workflow Management
                                 </h1>
-                                <p className="text-para font-normal text-sm lg:text-base tracking-tight lg:w-[405px] leading-6 lg:text-start">
+                                <p className="text-para font-normal text-sm lg:text-base tracking-tight lg:w-[405px] md:leading-6 md:tracking-[-0.01rem] md:text-start lg:text-start">
                                     ConcertRx modernizes how pharmacies manage
                                     workflow, medication waiting lists and
                                     patient journeys by efficiently triggering
@@ -218,7 +218,7 @@ const product = () => {
                             </article>
                         </div>
                     </div>
-                    <div className="w-full flex flex-col justify-center items-start">
+                    <div className="w-full flex flex-col justify-center items-start md:shrink md:w-[426px] lg:flex-none lg:w-[624px]">
                         <img
                             src={EasyWork}
                             alt=""
@@ -228,11 +228,11 @@ const product = () => {
                 </div>
             </section>
             {/* Patient Jorney */}
-            <section className="w-full lg:h-[628px] lg:mb-[96px] mx-auto px-4 md:px-6 lg:px-28">
+            <section className="w-full lg:h-[628px] md:mb-[56px] lg:mb-[96px] mx-auto px-4 md:px-6 lg:px-28">
                 <div className="flex md:h-[380px] lg:h-[627px] gap-3 flex-col md:flex-row md:relative ">
-                    <div className="w-full lg:h-full flex justify-center items-center bg-zinc-50 rounded-lg   ">
+                    <div className="w-full lg:h-full flex justify-center items-center bg-zinc-50 rounded-lg">
                         {/* tituto */}
-                        <div className="flex flex-col lg:w-[405px] lg:h-[236px] items-center md:items-start gap-2.5">
+                        <div className="flex flex-col md:w-[288px] md:h-[250px] lg:w-[405px] lg:h-[236px] items-center md:mr-[178px] lg:mr-[112px] md:items-start gap-2.5">
                             <div className=" flex gap-2 justify-center items-center">
                                 <img
                                     src={ManageIcon}
@@ -244,12 +244,12 @@ const product = () => {
                                     Manage Pharmacies
                                 </p>
                             </div>
-                            <article className="flex flex-col gap-4 items-center lg:items-start">
-                                <h1 className="text-text text-3xl leading-[58px] tracking-tighter text-center font-bold tracking-tights md:text-2xl lg:w-[306px] lg:text-[41px] lg:leading-[58px] lg:tracking-tighter lg:text-start">
+                            <article className="flex flex-col gap-4 items-center md:items-start lg:items-start">
+                                <h1 className="text-text text-3xl leading-[58px] tracking-tighter text-center font-bold tracking-tights md:text-2xl md:tracking-[0.01rem] md:leading-[29px] lg:w-[306px] lg:text-[42px] lg:leading-[58px] lg:tracking-[-0.04rem] md:text-start lg:text-start">
                                     {" "}
                                     Patient’s Journey Management
                                 </h1>
-                                <p className="text-para font-normal text-sm lg:text-base tracking-tight lg:w-[405px] leading-6 lg:text-start">
+                                <p className="text-para font-normal text-sm lg:text-base tracking-tight lg:w-[405px] leading-6 md:text-start lg:text-start">
                                     ConcertRx modernizes how pharmacies manage
                                     workflow, medication waiting lists and
                                     patient journeys by efficiently triggering
@@ -260,21 +260,21 @@ const product = () => {
                             </article>
                         </div>
                     </div>
-                    <div className="w-full flex flex-col justify-center items-start">
+                    <div className="w-full flex flex-col justify-center items-start md:shrink md:w-[270px] lg:w-[1130px]">
                         <img
                             src={EasyWork}
                             alt=""
-                            className="md:w-[360px] md:h-[204px] lg:w-[673px] lg:h-[381px] md:absolute lg:top-[122px] lg:left-[552px] sm:top-32 sm:left-48"
+                            className="md:w-[360px] md:h-[204px] lg:w-[673px] lg:h-[381px] md:absolute md:top-[88px] md:left-[360px] lg:top-[122px] lg:left-[552px] sm:top-32 sm:left-48"
                         />
                     </div>
                 </div>
             </section>
             {/* Out of stock */}
-            <section className="w-full lg:h-[628px] lg:mb-[96px] mx-auto px-4 md:px-6 lg:px-28">
+            <section className="w-full lg:h-[628px] md:mb-[56px] lg:mb-[96px] mx-auto px-4 md:px-6 lg:px-28">
                 <div className="flex md:h-[380px] lg:h-[627px] gap-3 flex-col md:flex-row-reverse md:relative ">
                     <div className="w-full lg:h-full flex justify-center items-center bg-zinc-50 rounded-lg   ">
                         {/* tituto */}
-                        <div className="flex flex-col lg:w-[405px] lg:h-[236px] items-center md:items-start gap-2.5">
+                        <div className="flex flex-col lg:w-[405px] lg:h-[236px] md:w-[288px] md:h-[202px] md:pl-[45px] lg:p-0 lg:items-center md:items-start md:gap-[10px] lg:gap-2.5">
                             <div className="flex gap-2 justify-center items-center">
                                 <img
                                     src={MsgIcon}
@@ -286,12 +286,12 @@ const product = () => {
                                     SMS. An easy, effective channel.
                                 </p>
                             </div>
-                            <article className="flex flex-col gap-4 items-center lg:items-start">
-                                <h1 className="text-text text-3xl leading-[58px] tracking-tighter text-center font-bold tracking-tights md:text-2xl lg:w-[306px] lg:text-[47px] lg:leading-[58px] lg:tracking-tighter lg:text-start">
+                            <article className="flex flex-col gap-4 items-center md:items-start lg:items-start">
+                                <h1 className="text-text text-3xl leading-[58px] md:text-start md:font-bold md:tracking-[-0.04rem] md:leading-[29px] text-center font-bold tracking-tights md:text-2xl lg:w-[306px] lg:text-[47px] lg:leading-[58px] lg:tracking-tighter lg:text-start">
                                     {" "}
                                     Out of stocks?
                                 </h1>
-                                <p className="text-para font-normal text-sm lg:text-base tracking-tight lg:w-[405px] leading-6 lg:text-start">
+                                <p className="text-para font-normal text-sm lg:text-base tracking-tight lg:w-[405px] md:leading-6 md:tracking-[-0.01rem] md:text-start lg:text-start">
                                     SMS. An easy, effective channel. With
                                     ConcertRx, you can effortlessly embed SMS
                                     notifications into your workflow, keeping
@@ -301,7 +301,7 @@ const product = () => {
                             </article>
                         </div>
                     </div>
-                    <div className="w-full flex flex-col justify-center items-start">
+                    <div className="w-full flex flex-col justify-center items-start md:shrink md:w-[426px] lg:flex-none lg:w-[624px]">
                         <img
                             src={EasyWork}
                             alt=""
@@ -311,39 +311,48 @@ const product = () => {
                 </div>
             </section>
             {/* sliders */}
-            <section className="flex flex-col items-center gap-11">
-                <div className="flex flex-col items-center gap-[18px]">
-                    <div className="flex flex-row">
+            <section className="flex flex-col md:h-[310px] lg:h-[400px] items-center md:gap-[31px] lg:gap-11">
+                <div className="flex flex-col items-center gap-[12px]">
+                    <div className="flex flex-row md:gap-2 lg:w-[237px] items-center">
                         <img src={Star} alt="" />
-                        <p className="text-sm font-medium tracking-tight leading-5">
+                        <p className="text-sm font-medium md:leading-[14px] md:tracking-[0.01rem] lg:tracking-tight lg:leading-5">
                             Trusted by over 1,000 customers
                         </p>
                     </div>
-                    <h2 className="font-bold text-[28px] lg:text-5xl text-center tracking-[-0.15rem]">
+                    <h2 className="font-bold md:text-[30px] md:leading-[30px] md:tracking-[-0.04rem] lg:text-5xl lg:leading-[58px] lg:tracking-[-0.04rem] text-center tracking-[-0.15rem]">
                         {" "}
                         But don't take it from us…
                     </h2>
                 </div>
                 <Slider />
             </section>
-            <section className="flex flex-col gap-6 items-center md:h-[519px] justify-center ">
-                <div className="flex flex-col items-center gap-4 justify-center md:h-[271px] md:w-[630px]">
-                    <div className=" flex gap-3 items-center">
-                        <img src={Rayo} alt="" className="w-[10px] h-[18px]" />
-                        <p>Lets Connect</p>
+            <section className="flex flex-col lg:h-[519px] gap-6 items-center md:h-[363px] md:mt-[55px] lg:mt-[125px] ">
+                <div className="flex flex-col items-center md:gap-7 justify-center md:h-[271px] md:w-[630px]">
+                    <div className="flex flex-col gap-[12px] items-center">
+                        <div className=" flex gap-3 items-center">
+                            <img
+                                src={Rayo}
+                                alt=""
+                                className="w-[10px] h-[18px]"
+                            />
+                            <p>Lets Connect</p>
+                        </div>
+                        <div className="flex flex-col gap-4">
+                            <h2 className="font-bold text-[28px] md:text-[30px] md:tracking-[-0.03rem] lg:text-5xl text-center tracking-tighter">
+                                Ready to Make Music?
+                            </h2>
+                            <p className="text-base font-normal tracking-tighter text-para text-center">
+                                Your success in this new era of pharmacy will be
+                                defined by your ability to challenge outdated
+                                business processes and ask what really works.
+                                You can either use a pen and paper to manage an
+                                Ozempic waiting list or you can use ConcertRx
+                                and save time, money and hair!.{" "}
+                            </p>
+                        </div>
                     </div>
-                    <h2 className="font-bold text-[28px] lg:text-5xl text-center tracking-tighter">
-                        Ready to Make Music?
-                    </h2>
-                    <p className="text-base font-normal tracking-tighter text-para text-center">
-                        Your success in this new era of pharmacy will be defined
-                        by your ability to challenge outdated business processes
-                        and ask what really works. You can either use a pen and
-                        paper to manage an Ozempic waiting list or you can use
-                        ConcertRx and save time, money and hair!.{" "}
-                    </p>
                     <div className="flex flex-col gap-4">
-                        <button className="flex flex-row items-start py-4 px-8 bg-primary rounded-3xl text-white font-medium text-sm">
+                        <button className="flex flex-row items-start md:py-[11px] md:px-[32px] lg:py-4 lg:px-8 md:w-[142px] md:h-[42px] bg-primary rounded-3xl text-white font-medium text-sm">
                             <Link>Start for free</Link>
                         </button>
                         <p className="text-xs text-text">Get 50 credits now.</p>

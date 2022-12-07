@@ -4,68 +4,70 @@ import { Listicon, minus, plus } from "../assets/Icon"
 const pricing = () => {
     return (
         <div className="w-full h-full">
-            <div className="w-full lg:h-[572px] bg-bg flex justify-center ">
-                <div className="flex flex-col items-center gap-4 p-0 mt-[200px]">
-                    <h1 className="font-bold text-5xl tracking-[-0.2rem] text-text">
+            <div className="w-full md:h-[544px] lg:h-[572px] bg-bg flex justify-center ">
+                <div className="flex flex-col items-center gap-4 p-0 md:mt-[118px] lg:mt-[200px]">
+                    <h1 className="font-bold md:text-[44px] md:leading-[53px] md:tracking-[-0.04rem] lg:text-5xl lg:tracking-[-0.2rem] text-text">
                         Plans & Pricing
                     </h1>
-                    <p className="text-lg font-normal leading-7 tracking-tight lg:w-[534px]">
+                    <p className="lg:text-lg font-normal lg:leading-7  lg:tracking-tight lg:w-[534px] md:text-base md:leading-[24px] md:tracking-[-0.01rem] md:w-[516px]">
                         We’re working on a suit of tools to make managing
                         complex systems easier, for everyone. We can’t wait to
                         hear what you think
                     </p>
                 </div>
             </div>
-            <div className="lg:h-[556px] flex flex-col px-[80px] justify-center">
-                <div className="flex gap-8 lg:h-[400px]">
+            <div className="lg:h-[556px] flex flex-col px-[80px] md:items-center justify-center">
+                <div className="flex gap-8 md:flex-col lg:flex-row bg-green-50 md:w-[384px] lg:w-[1280px] lg:h-[400px]">
                     {/* car1 */}
-                    <div className="flex gap-8 h-[516px] relative lg:bottom-[160px]">
-                        <div className="lg:h-[516px] w-[405px] bg-bgCard border border-solid border-borCard rounded-md flex flex-col lg:gap-[37px] items-start p-10">
-                            <div className="flex flex-col lg:gap-[17px]">
-                                <div className="flex flex-col items-start gap-2">
-                                    <h3 className="lg:text-2xl font-bold leading-6 text-text  lg:w-[98px] lg:h-[24px]">
-                                        Standard
-                                    </h3>
-                                    <p className="lg:text-xs lg:font-medium lg:leading-6 text-zinc-700 lg:w-[129px]">
-                                        Hit the Ground Running
-                                    </p>
+                    <div className="flex gap-8 lg:h-[516px] md:h-[466px] md:w-[384px] lg:w-[405px] relative md:bottom-[160px]">
+                        <div className="lg:h-[516px] w-[405px] bg-bgCard border border-solid border-borCard rounded-md flex flex-col md:gap-[32px] lg:gap-[37px] items-start md:p-6 lg:p-10">
+                            <div className="flex flex-col md:gap-[18px] lg:gap-[17px]">
+                                <div className="flex flex-col md:gap-4 lg:gap-6">
+                                    <div className="flex flex-col items-start gap-2">
+                                        <h3 className="lg:text-2xl md:text-base md:leading-4 font-bold lg:leading-6 text-text p-0 lg:w-[98px] lg:h-[24px]">
+                                            Standard
+                                        </h3>
+                                        <p className="md:text-xs md:leading-3 lg:font-medium lg:leading-6 text-zinc-700 lg:w-[129px]">
+                                            Hit the Ground Running
+                                        </p>
+                                    </div>
+                                    <h2 className=" lg:text-5xl md:text-[32px] md:leading-[48px] text-start font-bold lg:h-[48px] lg:leading-[48px]">
+                                        $29.95
+                                        <span className="text-xl font-bold leading-[48px]">
+                                            / month
+                                        </span>
+                                    </h2>
                                 </div>
-                                <h2 className=" text-5xl font-bold h-[48px] leading-[48px]">
-                                    $29.95
-                                    <span className="text-xl font-bold leading-[48px]">
-                                        / month
-                                    </span>
-                                </h2>
                                 <div className="flex flex-col items-start lg:w-[231px] lg:h-[216px]">
                                     <ul className="flex flex-col items-start gap-6 mt-[3px]">
-                                        <li className="text-sm font-normal leading-4 text-zinc-800 flex gap-4">
+                                        <li className="md:text-base md:leading-4 lg:text-sm font-normal leading-4 text-zinc-800 flex gap-4">
                                             <img src={Listicon} alt="" />
                                             Unlimited boards
                                         </li>
-                                        <li className="text-sm font-normal leading-4 text-zinc-800 flex gap-4">
+                                        <li className="md:text-base md:leading-4 lg:text-sm font-normal leading-4 text-zinc-800 flex gap-4">
                                             <img src={Listicon} alt="" />
                                             Free SENDER ID
                                         </li>
-                                        <li className="text-sm font-normal leading-4 text-zinc-800 flex gap-4">
+                                        <li className="md:text-base md:leading-4 lg:text-sm font-normal leading-4 text-zinc-800 flex gap-4">
                                             <img src={Listicon} alt="" />
                                             IP address login
                                         </li>
-                                        <li className="text-sm font-normal leading-4 text-zinc-800 flex gap-4">
+                                        <li className="md:text-base md:leading-4 lg:text-sm font-normal leading-4 text-zinc-800 flex gap-4">
                                             <img src={Listicon} alt="" />
                                             Buy SMS credits for $0.1 /credit
                                         </li>
-                                        <li className="text-sm font-normal leading-4 text-zinc-800 flex gap-4">
+                                        <li className="md:text-base md:leading-4 lg:text-sm font-normal leading-4 text-zinc-800 flex gap-4">
                                             <img src={Listicon} alt="" />
                                             GST included in pricing
                                         </li>
-                                        <li className="text-sm font-normal leading-4 text-zinc-800 flex gap-4">
+                                        <li className="md:text-base md:leading-4 lg:text-sm font-normal leading-4 text-zinc-800 flex gap-4">
                                             <img src={Listicon} alt="" />
                                             Credits do not expire
                                         </li>
                                     </ul>
                                 </div>
                             </div>
-                            <button className="flex justify-center items-center lg:w-[317px] lg:h-[40px] lg:px-4 lg:py-3 bg-primary rounded-[20px] ">
+                            <button className="flex justify-center items-center md:w-[336px] md:h-[40px] md:py-3 md:px-4 lg:w-[317px] lg:h-[40px] lg:px-4 lg:py-3 bg-primary rounded-[20px] ">
                                 <p className="text-sm font-medium leading-4 text-white">
                                     Get Started
                                 </p>
@@ -73,34 +75,36 @@ const pricing = () => {
                         </div>
                     </div>
                     {/* car2 */}
-                    <div className="flex gap-8 h-[516px] relative lg:bottom-[160px]">
-                        <div className="lg:h-[516px] w-[405px] bg-bgCard border border-solid border-borCard rounded-md flex flex-col lg:gap-[37px] items-start p-10">
-                            <div className="flex flex-col lg:gap-[17px]">
-                                <div className="flex flex-col items-start gap-2">
-                                    <h3 className="lg:text-2xl leading-6 text-text font-bold text-start lg:w-[98px] lg:h-[24px]">
-                                        Pro
-                                    </h3>
-                                    <p className="lg:text-xs lg:font-medium lg:leading-6 text-zinc-700 lg:w-[129px]">
-                                        Power up your business
-                                    </p>
+                    <div className="flex gap-8 lg:h-[516px] md:h-[340px] md:w-[384px] lg:w-[405px] relative md:bottom-[160px]">
+                        <div className="lg:h-[516px] w-[405px] bg-bgCard border border-solid border-borCard rounded-md flex flex-col md:gap-[32px] md:p-6 lg:gap-[37px] items-start lg:p-10">
+                            <div className="flex flex-col md:gap-[18px] lg:gap-[17px]">
+                                <div className="flex flex-col md:gap-4 lg:gap-6">
+                                    <div className="flex flex-col items-start gap-2">
+                                        <h3 className="lg:text-2xl md:text-base md:leading-4 leading-6 text-text font-bold text-start lg:w-[98px] lg:h-[24px]">
+                                            Pro
+                                        </h3>
+                                        <p className="md:text-xs md:leading-3 lg:text-xs lg:font-medium lg:leading-6 text-zinc-700 lg:w-[129px]">
+                                            Power up your business
+                                        </p>
+                                    </div>
+                                    <h2 className="md:text-[32px] md:leading-[48px] lg:text-5xl font-bold h-[48px] lg:leading-[48px]">
+                                        $39.95
+                                        <span className="text-xl font-bold leading-[48px]">
+                                            / month
+                                        </span>
+                                    </h2>
                                 </div>
-                                <h2 className=" text-5xl font-bold h-[48px] leading-[48px]">
-                                    $39.95
-                                    <span className="text-xl font-bold leading-[48px]">
-                                        / month
-                                    </span>
-                                </h2>
                                 <div className="flex flex-col items-start lg:w-[231px] lg:h-[216px]">
                                     <ul className="flex flex-col items-start gap-6 mt-[3px]">
-                                        <li className="text-sm font-normal leading-4 text-zinc-800 flex gap-4">
+                                        <li className="md:text-base md:leading-4 lg:text-sm font-normal leading-4 text-zinc-800 flex gap-4">
                                             <img src={Listicon} alt="" />
                                             Everything in Standard
                                         </li>
-                                        <li className="text-sm font-normal leading-4 text-zinc-800 flex gap-4">
+                                        <li className="md:text-base md:leading-4 lg:text-sm font-normal leading-4 text-zinc-800 flex gap-4">
                                             <img src={Listicon} alt="" />
                                             Two way messaging
                                         </li>
-                                        <li className="text-sm font-normal leading-4 text-zinc-800 flex gap-4">
+                                        <li className="md:text-base md:leading-4 lg:text-sm font-normal leading-4 text-zinc-800 flex gap-4">
                                             <img src={Listicon} alt="" />
                                             One chatbot
                                         </li>
@@ -115,7 +119,7 @@ const pricing = () => {
                         </div>
                     </div>
                     {/* car3 */}
-                    <div className="flex gap-8 h-[516px] relative lg:bottom-[160px]">
+                    <div className="flex gap-8 lg:h-[516px] md:w-[384px] lg:w-[405px] relative md:bottom-[160px]">
                         <div className="lg:h-[516px] w-[405px] bg-bgCard border border-solid border-borCard rounded-md flex flex-col lg:gap-[37px] items-start p-10">
                             <div className="flex flex-col lg:gap-[17px]">
                                 <div className="flex flex-col items-start gap-2">

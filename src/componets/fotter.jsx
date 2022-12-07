@@ -2,23 +2,24 @@ import React from "react"
 import { Link } from "react-router-dom"
 import { Logo, Logo2, Location, Email } from "../assets/Icon"
 import { Qr, Poligin } from "../assets/Icon"
+import qr from "../assets/Img/Qrscan.svg"
 import bg from "../assets/Img/bg.png"
 const fotter = () => {
     return (
         <footer className="text-center lg:text-left text-gray-600">
-            <div className="flex flex-col justify-center py-[40px] md:p-[40px] lg:py-[60px] lg:px-[165px] lg:h-[642px] bg-green-100">
-                <div className="w-full h-full gap-16 flex flex-col">
+            <div className="flex flex-col justify-center py-[40px] md:p-[40px] lg:py-[60px] md:h-[668px] lg:px-[165px] lg:h-[642px] bg-green-100">
+                <div className="w-full h-full md:gap-8 lg:gap-16 flex flex-col">
                     <div className="flex justify-center">
                         <img
                             src={Logo}
                             alt=""
-                            className="lg:w-[230px] h-[80px]"
+                            className="md:w-[170px] md:h-[59px] lg:w-[230px] lg:h-[80px]"
                         />
                     </div>
                     <div className="mx-6 text-center md:text-left">
                         <div className="grid grid-cols-2  md:grid-cols-3  lg:grid-cols-footer gap-8">
                             <div className="flex flex-col gap-4 lg:gap-7 text-left">
-                                <h6 className="text-[20xp]font-extrabold flex  justify-start md:justify-start">
+                                <h6 className="text-[20xp] font-extrabold flex justify-start md:justify-start">
                                     Product
                                 </h6>
                                 <div className="flex flex-col gap-3">
@@ -141,8 +142,8 @@ const fotter = () => {
                         </div>
                     </div>
                 </div>
-                <div className="flex flex-col items-center gap-8">
-                    <div className="flex flex-col md:flex-row items-center gap-5">
+                <div className="flex flex-col items-center md:gap-5 lg:gap-8">
+                    <div className="flex flex-col md:flex-row items-center md:gap-3 lg:gap-5">
                         <Link to={"/policy"}>
                             <p>Privacy Policy</p>
                         </Link>
@@ -169,29 +170,23 @@ const fotter = () => {
                     </div>
                 </div>
             </div>
-            <div className="text-center flex flex-col items-center justify-center gap-[45px] lg:h-[463px]">
-                <div className="flex flex-col md:flex-row justify-center items-center md:items-start lg:items-start gap-4 md:w-[648px] lg:w-[1062px]">
-                    <div className=" flex flex-col items-start gap-[30px] w-full">
-                        <h3 className="text-[28px] leading-9 text-text font-bold lg:w-[650px] lg:text-[40px]">
+            <div className="text-center flex flex-col items-center lg:justify-center md:gap-[35px] lg:gap-[45px] md:h-[322px] lg:h-[463px] md:py-[32px]">
+                <div className="flex flex-col md:flex-row justify-center items-center md:items-start lg:items-start gap-4 md:h-[142px] md:w-[648px] lg:w-[1062px]">
+                    <div className=" flex flex-col items-start md:gap-[16px] lg:gap-[30px] md:w-[524px] lg:w-[906px] w-full">
+                        <h3 className="text-[28px] leading-9 text-text text-start font-bold md:text-[24px] md:leading-[31px] lg:w-[650px] lg:text-[40px]">
                             Want to receive product updates?{" "}
                         </h3>
-                        <h5 className="text-xs text-start text-para md:w-[371px] md:h-[72px] lg:text-lg lg:w-[380px] lg:leading-7">
-                            To opt-in to our text message update service.Text
+                        <h5 className="text-xs text-start text-para md:w-[371px] md:text-[16px] md:leading-6 md:h-[72px] lg:text-lg lg:w-[417px] lg:leading-7">
+                            To opt-in to our text message update service. Text
                             YES to +61482 097 007 OR Scan the QR code. You can
                             send STOP to unsubscribe anytime.{" "}
                         </h5>
                     </div>
-                    <div className="flex flex-col items-center bg-white w-[140px] h-[195px]">
-                        <img src={Qr} alt="" className="w-[140px] h-[140]" />
-                        <div className="w-full flex flex-col justify-center items-center">
-                            <img src={Poligin} alt="" className="w-6 h-6" />
-                            <div className="flex justify-center items-center py-2 w-full px2.5 bg-text rounded-b-xl">
-                                <p className=" text-white">Scan me</p>
-                            </div>
-                        </div>
+                    <div className="flex flex-col items-center lg:w-[140px] lg:h-[195px]">
+                        <img src={qr} alt="" />
                     </div>
                 </div>
-                <p className="text-[14px] text-para text-center lg:w-[1062px]">
+                <p className="text-[14px] text-para text-center md:leading-[20px] md:w-[648px] lg:w-[1062px]">
                     Copyright © 2022 GigaRx Capital Pty Ltd and/or its
                     subsidiaries or affiliates. All Rights Reserved. ConcertRx,
                     ScriptCards, ShrinkMan, StoreOps and certain product names
@@ -199,7 +194,7 @@ const fotter = () => {
                     GigaRx Capital Pty Ltd and/or one of its subsidiaries or
                     affiliates in Australia and/or other countries. Any other
                     trademarks contained here in are the property of their
-                    respective owners.
+                    respective.
                 </p>
             </div>
         </footer>
